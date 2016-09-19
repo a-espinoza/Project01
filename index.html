@@ -8,7 +8,23 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <h1>Html  Test</h1>
+  <h1>aE's Project 1</h1>
+  <h2> this is going to be fun</h2>
+  <h1>Towers of Hanoi</h1>
   <script src="script.js"></script>
+  <script type='text/javascript'>
+
+  	var loadJSFile = function ( filename ) {
+
+  		var fileref=document.createElement('script')
+  		fileref.setAttribute("type","text/javascript")
+  		fileref.setAttribute("src", filename)
+
+  		document.getElementsByTagName("head")[0].appendChild(fileref)
+  	}
+
+  	loadJSFile('script.js');
+
+  </script>
 </body>
 </html>
