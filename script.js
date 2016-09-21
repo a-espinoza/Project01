@@ -9,11 +9,11 @@ Main.NumberInWordList = 29;
 
 Main.Word = "Andres";
 
-Main.WordU = "";
+Main.WordU ="";
 
 //pick word from word list doc
 Main.PullWord = function(){
-	Main.Word = Words.List[(Math.floor(Math.random() * Main.NumberInWordList))];
+Main.Word = Words.Lists[(Math.floor(Math.random() * Main.NumberInWordList))];
 }
 //pick the random number
 Main.SetUnderline = function(){
@@ -58,7 +58,10 @@ Main.UpdateLetter = function(letter){
 		window.location.reload();
 	}
 }
-
 Main.PullWord();
-
 Main.SetUnderline();
+
+$("a").click(function(event) {
+		event.preventDefault();
+		Main.UpdateLetter($(this).attr("id"));
+});

@@ -10,6 +10,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 html::after {
   content: "";
   background: url("http://www.ebhasin.com/games/games-source/javascript/Hang-Man-(Tamil-Movies)/src/pics/h0.png");
+  background-size:cover;
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -66,8 +67,14 @@ box-shadow: 10px 10px 20px #888888;
 
 h1{
   text-align: center;
-    font-size: 200%;
+    font-size: 85%;
 }
+
+h2{
+  text-align: center;
+    font-size: 75%;
+}
+
 #word{
   font-size: 70px;
 }
@@ -83,7 +90,7 @@ p{
 
 #letters a{
   color: grey;
-  font-size: 150%;
+  font-size: 350%;
   background-color: #dbdbdb;
   box-shadow: 2px 2px 5px #888888;
   border: 1px solid #b5b5b5;
