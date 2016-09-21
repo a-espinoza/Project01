@@ -5,7 +5,7 @@ Main.WordArray = [];
 Main.WordUArray = [];
 Main.Lives = 6;
 
-Main.NumberInWordList = 29;
+Main.NumberInWordLists = 29;
 
 Main.Word = "Andres";
 
