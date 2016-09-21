@@ -7,6 +7,20 @@ background: radial-gradient(ellipse at center,  #eeeeee 0%,#afafaf 100%); /* W3C
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#afafaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+html::after {
+  content: "";
+  background: url("http://www.ebhasin.com/games/games-source/javascript/Hang-Man-(Tamil-Movies)/src/pics/h0.png");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  width:auto;
+}
+
+
 body{
   width: 80%;
   margin: auto;

@@ -5,20 +5,20 @@ Main.WordArray = [];
 Main.WordUArray = [];
 Main.Lives = 6;
 
-Main.NumberInWordList = 30;
+Main.NumberInWordList = 29;
 
-Main.Word = "Andres is cool";
+Main.Word = "Hellow";
 
 Main.WordU = "";
 
 Main.PullWord = function(){
 	Main.Word = Words.List[(Math.floor(Math.random() * Main.NumberInWordList))];
 }
-
+//pick the random number
 Main.SetUnderline = function(){
 	Main.PullWord();
 	for(i=0; i < Main.Word.length; i++){
-		Main.WordArray[i] = Main.Word.charAt(i);
+		Main.WordArray[i] = Main.Word.charAt(i);//An integer between 0 and 1-less-than the length of the string.
 		Main.WordUArray[i] = "_";
 	}
 	Main.WordU = Main.WordUArray.join("");
@@ -26,6 +26,7 @@ Main.SetUnderline = function(){
 	document.getElementById("Letters").innerHTML = Main.Word.length;
 }
 
+//update Lettter Function WHY NOT WORKING?
 Main.UpdateLetter = function(letter){
 	Main.Changes = 0;
 	for(i=0; i < Main.Word.length; i++){
