@@ -13,7 +13,7 @@ Main.WordU ="";
 
 //pick word from word list doc
 Main.PullWord = function(){
-Main.Word = Words.Lists[(Math.floor(Math.random() * Main.NumberInWordList))];
+Main.Word = Words.Lists[(Math.floor(Math.random() * Main.NumberInWordLists))];
 }
 //pick the random number
 Main.SetUnderline = function(){
