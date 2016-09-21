@@ -1,65 +1,62 @@
+//alert("jS is Working! Yey!")
 
-alert ("jS is WORKING!!")
+Main = {};
+Main.WordArray = [];
+Main.WordUArray = [];
+Main.Lives = 6;
 
-//myObjects
-main ={};
-main.wordArray = [];
-main.wordUArray = [];
-main.lives  = 6;
+Main.NumberInWordList = 30;
 
-main.NumberInwordList = 30;
+Main.Word = "Andres is cool";
 
-main.word = "i am working";
-main.wordU = "";
+Main.WordU = "";
 
-//myFunctions
-
-main.pullWord = function (){
-  main.word = words.List[(math.random()*main.NumberInwordList)];
+Main.PullWord = function(){
+	Main.Word = Words.List[(Math.floor(Math.random() * Main.NumberInWordList))];
 }
 
-main.SetUnderline = function (){
-main.pullWord();
-for (i=0; i<main.word.length; i++){
-  main.wordArray[i] = main.word.charAt(i);
-  main.wordUArray[i] = "_";
+Main.SetUnderline = function(){
+	Main.PullWord();
+	for(i=0; i < Main.Word.length; i++){
+		Main.WordArray[i] = Main.Word.charAt(i);
+		Main.WordUArray[i] = "_";
+	}
+	Main.WordU = Main.WordUArray.join("");
+	document.getElementById("word").innerHTML = Main.WordU;
+	document.getElementById("Letters").innerHTML = Main.Word.length;
 }
 
-main.wordU = main.wordArray.join("");
-document.getElementById("word").innerHTML = main.wordU;
-document.getElementById("letters").innerHTML = main.word.length;
-}
-
-main.updateletter = function(letter){
-	main.changes = 0;
-	for(i=0; i < main.word.length; i++){
-		main.wordarray[i] = main.word.charAt(i);
-		if(main.word.charAt(i) == letter){
-		main.wordUArray[i] = letter;
-		main.changes += 1;
+Main.UpdateLetter = function(letter){
+	Main.Changes = 0;
+	for(i=0; i < Main.Word.length; i++){
+		Main.WordArray[i] = Main.Word.charAt(i);
+		if(Main.Word.charAt(i) == letter){
+		Main.WordUArray[i] = letter;
+		Main.Changes += 1;
 		}
 	}
-	if(main.changes < 1){
-		main.lives -= 1;
-		document.getElementById("lives").innerHTML = main.lives;
+	if(Main.Changes < 1){
+		Main.Lives -= 1;
+		document.getElementById("lives").innerHTML = Main.Lives;
 	}
+	Main.WordU = Main.WordUArray.join("");
+	document.getElementById("word").innerHTML = Main.WordU;
 
-main.wordU = main.wordUArray.join("");
-document.getElementById("word").innerHTML = main.wordU;
+	Main.Word1 = Main.WordArray.join("");
+	Main.Word2 = Main.WordUArray.join("");
 
-main.Word1 = main.wordArray.join("");
-main.Word2 = main.wordUArray.join('');
+	if(Main.Lives < 1){
+		document.getElementById("word").innerHTML = Main.Word1;
+		alert("Sorry, you are DEAD! Try again!");
+		window.location.reload();
 
-  if (main.Word1 == main.Word2){
-    alert("You WON! YEYYYY!")
-    window.location.reload();
-  }
-  if(main.lives > 1){
-      document.getElementById(WORD).inner.HTML == main.word1;
-      alert("You are dead! Try Again ")
-      window.location.reload();
-  }
-
-  main.Pullword();
-  main.SetUnderline();
+	}
+	if(Main.Word1 === Main.Word2){
+		alert("Wohoooooo!!! YOU WON!!!!");
+		window.location.reload();
+	}
 }
+
+Main.PullWord();
+
+Main.SetUnderline();

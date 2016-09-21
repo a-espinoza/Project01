@@ -1,6 +1,6 @@
 //WordListDocument
-words = {};
-words.Lists = [];
+Words = {};
+Words.List = [];
 
 words.Lists[0] = "general";
 words.Lists[1] = "assembly";
