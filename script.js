@@ -7,10 +7,11 @@ Main.Lives = 6;
 
 Main.NumberInWordList = 29;
 
-Main.Word = "Hellow";
+Main.Word = "Andres";
 
 Main.WordU = "";
 
+//pick word from word list doc
 Main.PullWord = function(){
 	Main.Word = Words.List[(Math.floor(Math.random() * Main.NumberInWordList))];
 }
