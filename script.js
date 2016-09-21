@@ -1,5 +1,5 @@
 
-alert ("Js is WORKING!!")
+alert ("jS is WORKING!!")
 
 //myObjects
 main ={};

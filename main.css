@@ -7,10 +7,33 @@ background: radial-gradient(ellipse at center,  #eeeeee 0%,#afafaf 100%); /* W3C
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#afafaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+body{
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4)
+
+}
+#Header{
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+#hangman{
+text-align: center;
+font-size: 2em;
+
+}
 
 #container{
 width: 70%;
 height: 200px;
+max-width: 960px;
 border: 2px solid grey;
 padding:2%;
 border-radius:10px ;
@@ -19,38 +42,44 @@ margin: 15% auto;
 box-shadow: 10px 10px 20px #888888;
 }
 
-h1, h2{
-text-align: center;
+h1{
+  text-align: center;
+    font-size: 200%;
+}
+#word{
+  font-size: 70px;
 }
 
 p{
   font-size:150%;
   text-align: center;
 }
+#letters{
+}
+
+
 
 #letters a{
-  padding:5px;
   color: grey;
-  font-size: 200%;
+  font-size: 150%;
   background-color: #dbdbdb;
   box-shadow: 2px 2px 5px #888888;
   border: 1px solid #b5b5b5;
   border-radius: 5px;
   cursor: pointer;
+  padding: 5px;
+  display: inline-block;
+  margin-bottom: 8px;
+
 }
 
 #letters a:hover {
     color:white;
     box-shadow: 5px 5px 20px #888888;
+    text-decoration: underline;
   }
 
   #letters a d.{
     color: yellow;
     text-decoration:underline;
   }
-
-
-
-
-
-}
