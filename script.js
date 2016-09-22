@@ -1,30 +1,16 @@
-<<<<<<< HEAD
-//alert("jS is Working! Yey!")
 
-=======
->>>>>>> master
 Main = {};
 Main.WordArray = [];
 Main.WordUArray = [];
 Main.Lives = 6;
 
-<<<<<<< HEAD
-Main.NumberInWordLists = 29;
-=======
 Main.NumberInWordList = 29;
->>>>>>> master
-
 Main.Word = "Andres";
-
 Main.WordU ="";
 
 //pick word from word list doc
 Main.PullWord = function(){
-<<<<<<< HEAD
-Main.Word = Words.Lists[(Math.floor(Math.random() * Main.NumberInWordLists))];
-=======
 Main.Word = Words.List[(Math.floor(Math.random() * Main.NumberInWordList))];
->>>>>>> master
 }
 //pick the random number
 Main.SetUnderline = function(){
@@ -62,14 +48,8 @@ Main.UpdateLetter = function(letter){
 		document.getElementById("word").innerHTML = Main.Word1;
 		alert("Sorry, you are DEAD! Try again!");
 		window.location.reload();
-<<<<<<< HEAD
-
-	}
-=======
 	}
 
-
->>>>>>> master
 	if(Main.Word1 === Main.Word2){
 		alert("Wohoooooo!!! YOU WON!!!!");
 		window.location.reload();
