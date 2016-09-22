@@ -49,8 +49,9 @@ Main.UpdateLetter = function(letter){
 		document.getElementById("word").innerHTML = Main.Word1;
 		alert("Sorry, you are DEAD! Try again!");
 		window.location.reload();
-
 	}
+
+
 	if(Main.Word1 === Main.Word2){
 		alert("Wohoooooo!!! YOU WON!!!!");
 		window.location.reload();

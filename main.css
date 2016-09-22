@@ -84,11 +84,13 @@ p{
   text-align: center;
 }
 #letters{
+  display: flex;
+  justify-content: center;
+
+
 }
-
-
-
 #letters a{
+  width: 40px;
   color: grey;
   font-size: 350%;
   background-color: #dbdbdb;
