@@ -1,12 +1,9 @@
-alert ("Js is WORKING!!")
-//alert("jS is Working! Yey!")
-
 Main = {};
 Main.WordArray = [];
 Main.WordUArray = [];
 Main.Lives = 6;
 
-Main.NumberInWordLists = 29;
+Main.NumberInWordList = 29;
 
 Main.Word = "Andres";
 
@@ -14,7 +11,7 @@ Main.WordU ="";
 
 //pick word from word list doc
 Main.PullWord = function(){
-Main.Word = Words.Lists[(Math.floor(Math.random() * Main.NumberInWordLists))];
+Main.Word = Words.List[(Math.floor(Math.random() * Main.NumberInWordList))];
 }
 //pick the random number
 Main.SetUnderline = function(){
