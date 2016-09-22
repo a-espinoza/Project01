@@ -61,11 +61,7 @@ box-shadow: 10px 10px 20px #888888;
 }
 
 #word{
-<<<<<<< HEAD
-	color: red;
-=======
 	color: dark grey;
->>>>>>> master
 	text-decoration: underline;
 }
 
@@ -86,17 +82,6 @@ h2{
 p{
   font-size:150%;
   text-align: center;
-<<<<<<< HEAD
-}
-#letters{
-}
-
-
-
-#letters a{
-  color: grey;
-  font-size: 350%;
-=======
 }
 #letters{
   display: flex;
@@ -108,7 +93,6 @@ p{
   width: 60px;
   color: grey;
   font-size: 300%;
->>>>>>> master
   background-color: #dbdbdb;
   box-shadow: 2px 2px 5px #888888;
   border: 1px solid #b5b5b5;
